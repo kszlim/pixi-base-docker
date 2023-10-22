@@ -11,3 +11,4 @@ RUN useradd -ms /bin/bash user
 USER user
 
 RUN curl -fsSL https://pixi.sh/install.sh | bash
+ENV PATH="${PATH}::/home/user/.pixi/bin"
